@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    .parent{
+        display: grid;
+        grid-template: 200px 500px 150px / auto;
+        grid-template-areas: "A"
+                             "B"
+                             "C";
+    }
+
+    .header{
+        grid-area: A;
+        background-color: navy;
+        box-shadow: inset 0px 0px 5px 10px black;
+    }
+    .main{
+        grid-area: B;
+        background-color: gray;
+        box-shadow: inset 0px 0px 5px 10px black;
+
+    }
+    .footer{
+        grid-area: C;
+        background-color: navy;
+        box-shadow: inset 0px 0px 5px 10px black; 
+    }
+    .parent>.header>.p1{
+        color: white;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center; 
+        text-shadow: 0px 0px 10px white;
+    }
+    .parent>.header>.p2{
+        text-align: center;
+        word-spacing: 20px;
+        text-shadow: 0px 0px 10px white;
+    }
+    .a1{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        bottom: 30px;
+    }
+    .footer>.p3{
+        color: white;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-shadow: 0px 0px 10px white;
+    }
+    .footer>.p5{
+        text-align: center;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-variant: normal;
+        text-shadow: 0px 0px 10px white;
+    }
+    span{
+        word-spacing: 1px;
+    }
+    .main>p{
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 33px;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 10px;
+        text-shadow: 0px 0px 10px white;
+    }
+    img{
+        height: 300px;
+
+    }
+    .i1{
+        margin-left: 20px;
+        margin-top: 110px;
+        width: 30%;
+    }
+    .i2{
+        margin-left: 50px;
+        width: 30%;
+    }
+    .i3{
+        height: 300px;
+        width: 30%;
+        margin-left: 35px;
+    }
+    @media screen and (max-width: 1350px){
+        .parent>.header>.p2>a{
+        font-size: 30px;
+        } 
+        .footer{
+            padding-bottom: auto;
+            height: 150px;
+            margin-top: 500px;
+        }
+        .main>a>img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            margin-top: 25px;
+        }
+        .main{
+            height: 1000px;
+        }
+    }
+    span{
+        word-spacing: 1px;
+    }
+</style>
+<body>
+    <script>
+        function SaatiGoster(){
+            var tarih = new Date();
+            var saat = tarih.getHours();
+            var dakika = tarih.getMinutes();
+            var saniye =  tarih.getSeconds();
+            document.title = "TIME:"+" "+saat+":"+dakika+":"+saniye;
+        }
+        setInterval(SaatiGoster,1000);
+        </script>
+    
+    <div class="parent">
+        <div class="header">
+         <p class="p1">       
+           Yağız Esmerligil 
+         </p>
+         <p class="p2">
+            <a class="a1" href="index.html">Homepage</a>
+            <a class="a1" href="index2.html">About</a>
+            <a class="a1" href="index3.html"> <span>My Studies</span></a>
+         </p> 
+        </div>
+    
+        <div class="main">
+          <a href="../1-)Tribute Page/index2.html"><img class="i1" src="img/P1.PNG" title="Tribute Page" alt="Resim Bulunamadı"></a> 
+           <a href="../3-)Survey Form/index.html"><img class="i2" src="img/P2.PNG" title="Survey Form" alt="Resim Bulunamadı"></a> 
+           <a href="index.html"><img class="i3" src="img/P3.PNG" title="Personal Portfolio" alt="Resim Bulunamadı"></a> 
+        </div> 
+
+        <div class="footer">
+            <p class="p3">Contact Information</p>
+            <p class="p5">Yagizesmer@hotmail.com</p> 
+        </div> 
+    </div> 
+</body>
+</html>
