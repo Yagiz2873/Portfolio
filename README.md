@@ -12,5 +12,5 @@
 # *The Technologies and Languages Used For This Application*
 - *HTML5*
 - *CSS3*
-- *JavaScript (to give a warning to the user and also to give dynamism to the webpage.)*
-- *Vs Code
+- *JavaScript (to give a warning to the user and give dynamism to the webpage.)*
+- *VS Code*
