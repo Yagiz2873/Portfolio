@@ -9,3 +9,8 @@
 
 ![IMG_1358](https://user-images.githubusercontent.com/43166866/137592587-e7a5c9f5-8c5e-42a5-a0d9-dff2a37c6af4.JPG)
 
+# *The Technologies and Languages Used For This Application*
+- *HTML5*
+- *CSS3*
+- *JavaScript (to give a warning to the user and also to give dynamism to the webpage.)*
+- *Vs Code
